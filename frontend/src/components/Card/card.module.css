@@ -1,0 +1,10 @@
+.card {
+  box-shadow: 13px 13px 20px #cbced1, -13px -13px 20px #ffffff;
+  border-radius: 40px;
+  width: fit-content;
+  height: fit-content;
+  padding: 1.5rem;
+  margin-top: 1.5rem;
+  border-radius: 3rem;
+  text-align: center;
+}

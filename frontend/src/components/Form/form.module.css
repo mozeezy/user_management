@@ -1,0 +1,111 @@
+.login {
+  padding: 3rem;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form {
+  width: 35rem;
+  padding: 1.5rem;
+  background-color: var(--light-bg);
+  border-radius: 10px;
+  text-align: center;
+}
+
+.home {
+  display: flex;
+}
+
+.icon {
+  width: fit-content;
+  height: fit-content;
+  padding: 1rem;
+  color: var(--bs-info);
+  box-shadow: inset 2px 2px 8px rgba(55, 94, 148, 0.3),
+    inset -3px -2px 5px rgba(255, 255, 255, 0.8);
+  border-radius: 12px;
+  margin: 0 auto;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+input[type="text"],
+input[type="password"] {
+  background: none;
+  outline: none;
+  border: none;
+  margin-bottom: 30px;
+  border-radius: 25px;
+  box-shadow: inset 8px 8px 8px #cbced1, inset -8px -8px 8px #ffffff;
+  width: 100%;
+  padding: 1.5rem;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+  outline: none;
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1);
+  border-bottom: 3px solid var(--primary);
+}
+
+input[type="text"]:focus:invalid,
+input[type="password"]:focus:invalid {
+  border-bottom: 3px solid var(--error);
+}
+
+.btn {
+  outline: none;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  height: 4rem;
+  border-radius: 30px;
+  font-size: 20px;
+  font-weight: 700;
+  font-family: "Lato", sans-serif;
+  color: #fff;
+  text-align: center;
+  background: var(--primary-light);
+  box-shadow: 3px 3px 8px #b1b1b1, -3px -3px 8px #ffffff;
+  transition: 0.5s;
+  font-size: 15px;
+}
+
+.btn:hover {
+  background: var(--primary-light);
+  color: var(--light-bg-dark-shadow);
+  border-color: transparent;
+}
+
+.btn:active {
+  opacity: 1;
+  box-shadow: inset -4px -4px 8px rgba(255, 255, 255, 0.5),
+    inset 8px 8px 16px rgba(0, 0, 0, 0.1);
+  background-color: #79e3b6;
+}
+
+a {
+  display: flex;
+  justify-content: center;
+}
+
+span {
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and (max-width: 600px) {
+  .form {
+    width: 110%;
+  }
+  span {
+    flex-direction: column;
+  }
+}
